@@ -26,12 +26,13 @@ public class LongestUniqueSubString {
     public int lengthOfLongestSubstring(String s) {
         int i = 0, j = 0, max = 0;
         Set<Character> set = new LinkedHashSet<>();
-        Set<Character> setCpy = new LinkedHashSet<>();
+//        Set<Character> setCpy = new LinkedHashSet<>();
         int startIndex=0;
-        int endIndex=s.length()-1;
+//        int endIndex=s.length()-1;
+        int endIndex=0;
         while (j < s.length()) {
             if (!set.contains(s.charAt(j))) {
-            	int count = 0;
+//            	int count = 0;
 //            		System.out.println("Set contents: "+set.toString());
 //            		System.out.println("Adding char to set: "+s.charAt(j));
                 set.add(s.charAt(j++));
@@ -130,7 +131,7 @@ public class LongestUniqueSubString {
 //		longestSubstring("axpblmnbcfghij");
 		
 //		System.out.println(l.lengthOfLongestSubstring("abcdbdabcabcdef"));
-		System.out.println(l.lengthOfLongestSubstring("axpblmnbc"));
+		System.out.println(l.lengthOfLongestSubstring("axpblmnbcfghij"));
 		
 		
 	}
