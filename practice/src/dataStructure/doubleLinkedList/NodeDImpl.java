@@ -6,7 +6,8 @@ public class NodeDImpl {
 	
 	public void createSampleList(int length) {
 		for (int i = 0; i < length; i++) {
-			n.add((int)(Math.random()*100+1));
+//			n.add((int)(Math.random()*100+1));
+			n.add(i);
 		}
 	}
 
@@ -20,6 +21,7 @@ public class NodeDImpl {
 //		node.n.printList();
 		node.n.append(99999);
 		node.n.add(111, 5);
+		node.n.add("new");
 		node.n.printList();
 		node.n.delete(111);
 		node.n.printList();

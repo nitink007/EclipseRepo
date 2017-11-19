@@ -12,6 +12,7 @@ public class NodeDDemo {
 		
 		NodeD newNode = new NodeD(data);
 		newNode.next = head;
+		head.prev = newNode;
 		head = newNode;
 		newNode.data = data;
 	}
@@ -35,7 +36,8 @@ public class NodeDDemo {
 			while (n!=null) {
 				if (counter==position-1) {
 					newNode.next = n.next;
-					newNode.prev = n.next.prev;
+//					newNode.prev = n.next.prev;
+					newNode.prev = n;
 					n.next = newNode;
 					n.next.prev = newNode;
 					return;
