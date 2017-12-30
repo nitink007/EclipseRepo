@@ -1,4 +1,4 @@
-package dataStructure.doubleLinkedList;
+package dataStructures.doubleLinkedList;
 
 public class NodeD {
 	
